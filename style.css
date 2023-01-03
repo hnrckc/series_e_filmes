@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+
+}
+
+body{
+    background-image: linear-gradient(to right, rgb(29, 46, 61)0%, rgb(42, 77, 153)50.52%, rgb(6, 30, 82)100%);
+    background-position: top center;
+    background-size: 100% auto;
+}
+
+body * {
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+
+main {
+    max-width: auto;
+    width: 90%;
+    margin: 100px auto;
+    display: grid;
+    gap: 32px;
+}
+
+
+section{
+    background-image: linear-gradient(to right, rgb(8, 63, 182)0%, rgb(4, 22, 63)50.52%, rgb(9, 6, 24)100%);
+    color: white;
+    padding-top: 7px;
+    border-radius: 21px;
+}
+
+section div {
+    background-image: linear-gradient(to right, rgb(10, 10, 10)0%, rgb(53, 69, 104)50.52%, rgb(6, 30, 82)100%);
+    padding: 22px;
+    padding-top: 13px;
+    border-radius: 20px;
+}
+
+section h2 {
+    letter-spacing: -0.47px;
+}
+
+section p {
+    letter-spacing: -0.18px;
+    color: #A1A1AA;
+}
+
+section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+    margin-top: 22px;
+}
+
+section ul li{
+    transition: transform .3s;
+}
+
+section ul li:hover{
+    transform: scale(1.2)
+}
+
+header img {
+    border-radius: 50%;
+    width: 120px;
+}
+
+header {
+    padding-top: 32px;
+    height: 152px;
+
+}
+
+/* div-user */
+header div {
+    width: 120px;
+    margin: auto;
+    background-image: linear-gradient(400deg, rgb(25, 62, 141) 0%, rgb(229, 236, 250)50.45%, rgb(13, 50, 131) 100%);
+    border-radius: 50%;
+    display: flex;
+    padding: 4px;
+    transition: transform .3s;
+    
+}
+
+header div:hover {
+    transform: scale(1.1)
+
+}
+
+header div img {
+    width: 100%;
+    border-radius: 50%;
+
+}
+
+.movies-section img {
+    width: 120px;
+    border-radius: 8px;
+
+}
+
+.movies-section{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.serie-section img{
+    width: 120px;
+    border-radius: 8px;
+    
+}
+
+.serie-section{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.anime-section img{
+    width: 120px;
+    border-radius: 8px;
+}
+
+.anime-section{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.social-section{
+    margin: auto;
+}
+
+header div {
+    animation: partTop .4s .2s backwards;
+    
+}
+
+main section {
+    animation: partBot .5s backwards;
+
+}
+
+main section:nth-child(1){
+    animation-delay: 0;
+
+}
+
+main section:nth-child(2){
+    animation-delay: .3s;
+
+}
+
+main section:nth-child(3){
+    animation-delay: .6s;
+}
+
+@keyframes partTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+
+}
+
+@keyframes partBot {
+    from{
+        opacity: 0;
+        transform: translateX(-30px)
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0)
+    }
+
+}
